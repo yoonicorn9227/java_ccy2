@@ -38,18 +38,15 @@ public class JA0904_11 {
 		for (A = 1; A <= 100; A++) {
 			// System.out.println(A);
 			sumA = sumA + A;
+			if(sumA>=200) {
+				break;
 		}
-		System.out.println("for 문 밖 A : " + A);
-		System.out.println("for 문 밖 sumA : " + sumA);
-
-		// 2.
-		if(sumA>=200) {
-			System.out.println(A);
 		}
-		
-			
+		System.out.println("1~100까지 합중 200이상이 될때의 총합 : " + sumA);
+		System.out.println("합이 200이 넘을때 마지막으로 더한 숫자 : " + A);
 
-		
+	
+
 		
 		
 		
