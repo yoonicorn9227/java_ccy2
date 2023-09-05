@@ -16,15 +16,12 @@ public class J0905_02 {
 			//1. 더해서 200 넘었을때 순번과 합의 값을 도출
 			if(sum>=200) {
 				break;
-			// 1. 번의 전단계를 찾으세요
-				
-			}//if문//
-			
-		}//for문//
+			}//if문
+		}//for문
 
-
+		//출력
 		System.out.printf("정   답 : %d, %d \n ", i ,sum);
-		System.out.printf("이전단계 : %d, %d \n ", i-1, sum-i);
+		System.out.printf("이전단계 : %d, %d \n ", i-1, sum-i); // 1번 문제의 전단계를 찾으세요.
 		
 	}//main
 
