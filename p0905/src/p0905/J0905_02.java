@@ -21,7 +21,7 @@ public class J0905_02 {
 
 		//출력
 		System.out.printf("정   답 : %d, %d \n ", i ,sum);
-		System.out.printf("이전단계 : %d, %d \n ", i-1, sum-i); // 1번 문제의 전단계를 찾으세요.
+		System.out.printf("이전단계 : %d, %d ", i-1, sum-i); // 1번 문제의 전단계를 찾으세요.
 		
 	}//main
 

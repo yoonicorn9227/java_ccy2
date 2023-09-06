@@ -30,9 +30,9 @@ public class J0905_04 {
 			for(int j=1; j<=9; j++) {
 				for(int k=0; k<=9; k++) {
 					System.out.println(""+i+j+k);
-				}
-			}
-		}
+				}//FOR3
+			}//FOR2
+		}//FOR1
 		
 		
 		

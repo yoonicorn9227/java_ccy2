@@ -49,7 +49,7 @@ public class J0905_14 {
 				i++; //증감식
 		} // while
 		
-		
+		//최종출력
 		System.out.println("입력한 숫자 : ");
 		for(int j=0; j<=i; j++) {
 			System.out.printf("%d",num[j]);
