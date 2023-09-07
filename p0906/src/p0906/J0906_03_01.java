@@ -40,7 +40,7 @@ public class J0906_03_01 {
 			avg[i] = total[i] / 3.0; // 평균입력
 
 			count++;
-		} // for문(입력)
+			} // for문(입력)
 		System.out.println();
 		System.out.println("<<<<<<<<<<<<<<<<<<<<[학생성적표]>>>>>>>>>>>>>>>>>");
 		System.out.println("================<최종 산출값>======================");

@@ -13,12 +13,15 @@ public class J0906_02 {
 			arrNum[i] = i + 1;
 		}
 		
+		System.out.print("입력된 숫자: ");
 		for (int i = 0; i < arrNum.length; i++) {
-		//	if(i==0)
-			System.out.println(arrNum[i]);
-			System.out.println(", "+arrNum[i]);
-		}
-		System.out.println("입력된 숫자: ");
+			if(i==0) {
+				System.out.print(arrNum[0]);
+				continue;
+			} //if(숫자사이 조건문)
+			
+			System.out.print(", "+arrNum[i]);
+		}//for(입력숫자)
 		
 		
 	}// main
