@@ -5,7 +5,9 @@ public class Car {
 		String gearType;
 		int door;
 		
-		Car() {}; //기본생성자 ★꼭만들기!!!
+		Car() {}; //◀기본생성자 ★꼭만들기!!!
+		
+		//▼매개변수가 있는 생성자
 		Car(String c, String g, int d){
 			color =c;
 			gearType=g;
