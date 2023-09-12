@@ -1,7 +1,8 @@
 package p0911;
 
 public class Calculator {
-	// Calculator(){} 기본생성자 | (생략가능)
+	// [Calculator(){}] ▶ 기본생성자는 (생략가능) | 객체생성할때 초기화하는 메소드 : 생성자 / void 그리고 return타입이 없다.
+	//클래스이름이랑 같아야하고  return타입이 없다.(void는 쓰지 않는다.)
 	public static void main(String[] args) {
 
 		Cal1 c1 = new Cal1();
@@ -32,5 +33,5 @@ class Cal2 {
 
 	Cal2(int x) {// 매개변수가 1개가 있는 생성자
 		value = x;
-	}
+	}//
 }// class (Cal2)
