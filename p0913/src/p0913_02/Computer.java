@@ -1,4 +1,4 @@
-package p0913;
+package p0913_02;
 
 public class Computer extends Product {
 
