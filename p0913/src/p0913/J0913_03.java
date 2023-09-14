@@ -16,6 +16,7 @@ public class J0913_03 {
 		// CCard2 c2 = new CCard();
 		CCard c2 = new CCard(); // public
 
+		
 	}// MAIN
 
 }// CLASS
