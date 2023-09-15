@@ -52,7 +52,7 @@ public class J0914_11_쇼핑몰 {
 
 		Buyer b1 = new Buyer(id, name);
 		int choice = 0;
-		programLoop : while (true) {
+		programLoop: while (true) {
 			System.out.println("[하임마켓 가전 쇼핑몰]");
 			System.out.println("1. TV");
 			System.out.println("2. 컴퓨터");
@@ -68,20 +68,25 @@ public class J0914_11_쇼핑몰 {
 
 			switch (choice) {
 			case 1:
-				System.out.println("[TV 구매]");
-				System.out.println("결제를 진행할까요? <<1.Yes 2.No>>");
-				choice = scan.nextInt();
-				if (choice == 1) {
-					int check = b1.buy(new Tv());
-					if (check == 0)
-						break;
-					System.out.println("TV를 |구매|하셨습니다.");
-					System.out.printf("구매후 잔액 : %,d원 \n", b1.money);
-					System.out.println();
-				} else {
-					System.out.println("TV구매를 |취소|하셨습니다.");
-					System.out.println();
-				}
+				productBuy("TV",b1);
+				
+				
+				
+				
+//				System.out.println("[TV 구매]");
+//				System.out.println("결제를 진행할까요? <<1.Yes 2.No>>");
+//				choice = scan.nextInt();
+//				if (choice == 1) {
+//					int check = b1.buy(new Tv());
+//					if (check == 0)
+//						break;
+//					System.out.println("TV를 |구매|하셨습니다.");
+//					System.out.printf("구매후 잔액 : %,d원 \n", b1.money);
+//					System.out.println();
+//				} else {
+//					System.out.println("TV구매를 |취소|하셨습니다.");
+//					System.out.println();
+//				}
 				break;
 
 			case 2:
@@ -174,7 +179,37 @@ public class J0914_11_쇼핑몰 {
 				break programLoop;
 			}// switch
 		} // while
-
 	}// MAIN
+
+	
+	//리턴타입 : void -> 리턴타입이 없음. 매개변수 - 2개	
+	static void productBuy(String pName, Buyer b1) {
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.printf("[%s 구매]\n",pName);
+		System.out.println("결제를 진행할까요? <<1.Yes 2.No>>");
+	int	choice = scan.nextInt();
+		if (choice == 1) {
+			int check=0;
+			
+			if(pName.equals("TV")) {
+				check = b1.buy(new Tv());
+			}else if(pName.equals("컴퓨터")) {
+					check = b1.buy(new Computer());
+			}else if(pName.equals("오디오")) {
+				check = b1.buy(new Audio());
+			}else if(pName.equals("세탁기")) {
+				check = b1.buy(new Washing());
+			}
+			
+			if (check == 0) return;
+			System.out.printf("%s를 |구매|하셨습니다.",pName);
+			System.out.printf("구매후 잔액 : %,d원 \n", b1.money);
+			System.out.println();
+		} else {
+			System.out.printf("%s 구매를 |취소|하셨습니다.",pName);
+			System.out.println();
+		} // if
+	}// productBuy
 
 }// CLASS
