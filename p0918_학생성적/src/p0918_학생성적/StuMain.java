@@ -18,37 +18,20 @@ public class StuMain {
 				break;
 
 			case 2: //2.학생성적 입력 메소드
-				System.out.println();
-				System.out.println("[학생성적 입력]");
-				System.out.printf("(%d번째) 학생이름을 입력하세요. (0. 이전페이지로 이동)\n", stuCount);
-				String name = scan.next();
-				if (name.equals("0")) {
-					System.out.println("▶이전페이지로 이동합니다.");
-					System.out.println();
-					break;
-				} // if
-				System.out.println("<<국어점수>>를 입력하세요.");
-				int kor = scan.nextInt();
-				System.out.println("<<영어점수>>를 입력하세요.");
-				int eng = scan.nextInt();
-				System.out.println("<<수학점수>>를 입력하세요.");
-				int math = scan.nextInt();
-
-				// 학생성적 저장
-				stuAction.list.add(new StuScore(name, kor, eng, math));
-				System.out.printf("<%d번째>학생성적이 <저장되었습니다.>",stuCount);
+				stuAction.stuInput(stuCount);
 				break;
 
-			case 3:
+			case 3://3.학생성적 출력 메소드
+				
 				break;
 
-			case 4:
+			case 4://4.학생성적 삭제 메소드
 				break;
 
-			case 5:
+			case 5://5.학생성적 검색 메소드
 				break;
 
-			case 6:
+			case 6://3.학생성적 등수 메소드
 				break;
 
 			case 0:
