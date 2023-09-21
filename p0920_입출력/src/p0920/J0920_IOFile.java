@@ -34,6 +34,7 @@ public class J0920_IOFile {
 
 		System.out.println("파일을 읽어와서 파일을 저장!");
 
+		
 	}// MAIN
 
 }// CLASS
