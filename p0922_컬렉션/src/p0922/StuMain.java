@@ -41,8 +41,8 @@ public class StuMain {
 			System.out.println("0.<<[프로그램 종료]>>");
 			System.out.println("--------------------------------------------------");
 			System.out.println("(메뉴) ▼원하는 <번호>를 입력하세요▼");
-			//String strCh =JOptionPane.showInputDialog("원하는 번호를 입력하세요"); //입력창 뜸
-			//choice=Integer.parseInt(strCh);
+			// String strCh =JOptionPane.showInputDialog("원하는 번호를 입력하세요"); //입력창 뜸
+			// choice=Integer.parseInt(strCh);
 			choice = scan.nextInt();
 			switch (choice) {
 			case 1:// 1.학생성적 입력
@@ -54,10 +54,9 @@ public class StuMain {
 			case 3:// 3.학생성적 수정
 				s.stuUpdate();
 				break;
-			case 4:// 4.학생성적 수정
-				
+			case 4:// 4.학생성적 삭제
+				s.stuDelete();
 				break;
-			
 			case 5:// 6.학생성적 이름순 출력
 				s.stuNameSort();
 				break;
@@ -70,13 +69,14 @@ public class StuMain {
 			case 8: // 파일 가져오기
 				s.stuFOpen();
 				break;
-
 			case 9:// 학생성적 파일저장
 				s.stuFSave();
 				break;
+			case 10:// 학생성적 등수처리
+				s.stuRank();
+				break;
 			case 0:// 프로그램 종료
-				System.out.println("[[프로그램 종료]]");
-				System.out.println();
+				s.stuExit();
 				break loop;
 
 			}// 전체 switch
